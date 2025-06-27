@@ -1,0 +1,431 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arte & Fé – Camisetas com Alma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="./img01 (1).png" alt="Logo Arte & Fé" class="logo">
+        <h1 class="title">Camisetas com alma</h1>
+
+        <nav class="navbar">
+          <ul class="nav-list">
+              <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+              
+              <li class="nav-item dropdown">
+                  <button class="dropdown-toggle">Coleções</button>
+                  <ul class="dropdown-menu">
+                      <li><a href="./games.html" class="dropdown-item">Espiritualidade e Fé</a></li>
+                      <li><a href="./games.html" class="dropdown-item">Games Retrô</a></li>
+                      <li><a href="./cultura.html" class="dropdown-item">Cultura & Nostalgia</a></li>
+                      <li><a href="./frases.html" class="dropdown-item">Frases com Significado</a></li>
+                  </ul>
+              </li>
+              
+              <li class="nav-item"><a href="#sobre" class="nav-link">Sobre a Marca</a></li>
+              <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+              <li class="nav-item"><a href="#conta" class="nav-link">Minha Conta / Carrinho</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <h2>"Vista o que você acredita."</h2>
+        <p>Camisetas com alma. Inspiradas na fé, na arte e na cultura.</p>
+    </section>
+
+    <!-- Banner Promocional -->
+    <section class="promo-banner">
+        <h2>Lançamento da coleção "Clássicos do Cinema"!</h2>
+        <p>🎬 Do altar ao VHS, tudo com alma.</p>
+    </section>
+
+    <!-- Coleções -->
+    <section id="colecoes" class="collections">
+        <h2>Coleções</h2>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <h3>Espiritualidade e Fé</h3>
+                <p>Santos, frases bíblicas, cruzes, arte sacra, devoção</p>
+            </div>
+            <div class="collection-item">
+                <h3>Cultura & Nostalgia</h3>
+                <p>Filmes clássicos como De Volta para o Futuro, Star Wars e muito mais.</p>
+            </div>
+            <div class="collection-item">
+                <h3>Games Retrô</h3>
+                <p>Nintendo, Sega, PlayStation 1 e personagens nostálgicos.</p>
+            </div>
+            <div class="collection-item">
+                <h3>Frases com Significado</h3>
+                <p>Frases inspiradoras misturando fé, cultura pop e reflexão.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section class="featured">
+        <h2>Produtos em Destaque</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>Santa Joana d'Arc – Fé que enfrenta batalhas</h3>
+                <p>Vista a coragem e a espiritualidade com esta arte exclusiva. Expressa força, devoção e inspiração.</p>
+            </div>
+            <div class="product-card">
+                <h3>1985 – O futuro começa no passado</h3>
+                <p>A magia de De Volta para o Futuro com estilo e memória afetiva. Para quem acredita no impossível.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Marca -->
+    <!-- <section id="sobre" class="about">
+        <h2>Sobre a Marca</h2>
+        <p>Criada por Cristiano Pereira da Silva, a marca nasceu com o propósito de unir dois mundos poderosos: a espiritualidade e a cultura pop. Nossas estampas carregam alma, história e estilo — tudo impresso em tecidos de qualidade para vestir com propósito.</p>
+    </section> -->
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <h2>Fale Conosco</h2>
+        <p>Envie um e-mail para: contato@arteefe.com.br ou preencha nosso formulário no rodapé.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>"Onde a arte encontra propósito e a fé vira estampa."</p>
+        <p>"Inspirados por histórias. Guiados pela fé."</p>
+        <p>"Para vestir o que você sente."</p>
+    </footer>
+</body>
+</html>
+
+CSS
+
+:root {
+  --gold: #cba135;
+  --white: #ffffff;
+  --dark: #1c1c1c;
+  --bordo: #7e2a2a;
+  --light-gray: #f3f4f6;
+  --Bege-Dourado: #a1865e;
+  --Marfim-Claro: #f8f6f1;
+  /* Textos auxiliares, ícones suaves */
+  --Cinza-Areia: #b6ada4;
+  /* Tipografia em fundos claros */
+  --Preto-Profundo: #1c1c1c;
+  /* Fundo alternativo, contraste */
+  --Branco: #ffffff;
+}
+
+body {
+  background-color: #a1865e;
+  color: var(--dark);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Unificado */
+.header {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 150px;
+  border-radius: 100px;
+  margin-left: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--gold);
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Navegação Principal - Estilo Unificado */
+.navbar {
+  display: flex;
+  margin-right: 3rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link,
+.dropdown-toggle {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover,
+.dropdown-toggle:hover {
+  color: var(--gold);
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+  list-style: none;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  color: var(--dark);
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+  color: var(--bordo);
+}
+
+/* Dropdown arrow indicator */
+.dropdown-toggle::after {
+  content: "▼";
+  font-size: 0.6rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Banner Principal */
+.banner {
+  background-color: var(--gold);
+  color: var(--white);
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.banner h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.125rem;
+}
+
+/* Banner Promocional */
+.promo-banner {
+  background-color: var(--bordo);
+  color: var(--white);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.promo-banner h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Coleções */
+.collections {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.collections h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collection-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+/* Produtos em Destaque */
+.featured {
+  background-color: var(--light-gray);
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: var(--white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.product-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Sobre a Marca */
+.about {
+  background-color: #f9f9f9;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+/* Contato */
+.contact {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Rodapé */
+.footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    margin: 1rem 0;
+  }
+
+  .navbar {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    display: none;
+    width: 100%;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .collection-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
