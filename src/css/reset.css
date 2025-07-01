@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* body{
+    background-color: antiquewhite;
+} */
+
+:root {
+  --Ouro-sutil: #b1976b;
+  /* Fundo neutro */
+  --Bege-claro: #f5f1eb;
+  --Cinza-claro: #c1beb2;
+  --Preto-grafite: #1e1e1e;
+
+  /* Paleta de Cores Oficial */
+
+  --gold: #cba135;
+  --white: #ffffff;
+  --dark: #1c1c1c;
+  --Bordo: #7e2a2a;
+  --light-gray: #f3f4f6;
+  --Bege-Dourado: #a1865e;
+  --Marfim-Claro: #f8f6f1;
+
+  /* Textos auxiliares, ícones suaves */
+  --Cinza-Areia: #b6ada44c;
+
+  /* Tipografia em fundos claros */
+  --Preto-Profundo: #1c1c1c;
+
+  /* Fundo alternativo, contraste */
+  --Branco: #ffffff;
+}
+
+/* Tipografia */
+/* Títulos: Playfair Display
+Textos: Montserrat */
