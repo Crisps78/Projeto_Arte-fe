@@ -1,7 +1,6 @@
 header {
   display: flex;
   justify-content: center;
-  /* background-color: var(--Ouro-sutil); */
   background-color: var(--Gold);
   padding: 50px;
   align-items: center;
@@ -12,14 +11,20 @@ header img {
   width: 100%;
   max-width: 250px;
   border-radius: 130px;
+  box-shadow: 12px 12px 30px var(--Marfim-Clarot);
 }
 header h1 {
-  font-size: 60px;
+  font-size: 40px;
   margin-right: 100px;
+  text-align: center;
   color: var(--Marfim-Claro);
-  /* position: absolute; */
+ 
 }
 
+header span {
+  font-size: 20px;
+  
+}
 nav {
   /* background-color: var(--gold); */
   background-color: var(--Bege-Dourado);
