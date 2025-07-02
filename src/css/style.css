@@ -49,45 +49,47 @@ nav a:hover {
   display: none;
   position: absolute;
   background-color: var(--Ouro-sutil);
+  
+
 }
 .dropdown-menu a {
   display: block;
   color: var(--Marfim-Claro);
+  
+  
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
+  
 }
 
 main {
-  /* background-color: var(--Cinza-claro); */
+
   margin: auto;
   text-align: center;
 }
 
+/* Banner Principal */
 .banner {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   flex-direction: column;
   height: 600px;
-  text-align: center;
   line-height: 2.0;
-  /* background-color: var(--Ouro-sutil); */
-  background: url(../assets/img/banner.png) center / cover no-repeat;
-
-  
-
+  background: url(../assets/img/banner1.png) right / cover no-repeat;
 }
 
 
 .banner h2 {
   color: var(--Bordo);
   font-size: 40px;
+  margin-top: 150px;
 }
 
 .banner p {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--Preto-grafite);
 }
 
@@ -118,3 +120,5 @@ figure img {
   color: var(--Light-gray);
   font-size: 25px;
 }
+
+
