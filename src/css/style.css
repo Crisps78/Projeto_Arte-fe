@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: center;
   /* background-color: var(--Ouro-sutil); */
-  background-color: var(--gold);
+  background-color: var(--Gold);
   padding: 50px;
   align-items: center;
   margin: auto;
@@ -22,7 +22,7 @@ header h1 {
 
 nav {
   /* background-color: var(--gold); */
-  background-color: var(--Ouro-sutil);
+  background-color: var(--Bege-Dourado);
 }
 
 ul {
@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 main {
-  background-color: var(--Cinza-claro);
+  /* background-color: var(--Cinza-claro); */
   margin: auto;
   text-align: center;
 }
@@ -68,18 +68,53 @@ main {
 .banner {
   display: flex;
   justify-content: center;
-  /* background-color: var(--Bordo); */
   align-items: center;
   flex-direction: column;
-  height: 300px;
+  height: 600px;
   text-align: center;
+  line-height: 2.0;
+  /* background-color: var(--Ouro-sutil); */
+  background: url(../assets/img/banner.png) center / cover no-repeat;
+
+  
+
 }
 
+
 .banner h2 {
-  color: var(--Ouro-sutil);
+  color: var(--Bordo);
   font-size: 40px;
 }
 
 .banner p {
   font-size: 18px;
+  color: var(--Preto-grafite);
+}
+
+figure {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+figure img {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.promo-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  text-align: center;
+  line-height: 2.0;
+  background-color: var(--Cinza-claro);
+}
+
+.promo-banner h2 {
+  color: var(--Light-gray);
+  font-size: 25px;
 }
