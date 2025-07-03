@@ -1,5 +1,5 @@
 body {
-  background-color: var(--Cinza-Areia);
+  background-color: var(--Ouro-sutil);
 }
 
 header {
@@ -15,7 +15,7 @@ header {
   gap: 50px;
 }
 
-.logo{
+.logo {
   width: 100%;
   max-width: 250px;
   border-radius: 130px;
@@ -30,7 +30,6 @@ header h1 {
 
 header span {
   font-size: 20px;
-  
 }
 nav {
   background-color: var(--Bege-Dourado);
@@ -61,69 +60,65 @@ nav a:hover {
   display: none;
   position: absolute;
   background-color: var(--Ouro-sutil);
-  
-
 }
 .dropdown-menu a {
   display: block;
   color: var(--Marfim-Claro);
-  
-  
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
-  
 }
 
 main {
+ width: 1700px;
+ margin: auto;
 
-  margin: auto;
-  text-align: center;
 }
 
 /* Banner Principal */
 
-  .banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;  /* Alinha horizontalmente */
-    align-items: center;      /* Alinha verticalmente */
-    text-align: center;
-    height: 500px;
-    background: url(../assets/img/banner1.png) right / cover no-repeat;
-  }
-   
-  .banner h2 {
-    margin-top: 130px;
-    color: var(--Bordo); 
-    font-size: 40px;
-    
-  }
-  
-  .banner p {
-    font-size: 20px;
-    color: var(--Preto-grafite);
-    
-  }
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  text-align: center;
+  height: 500px;
+  background: url(../assets/img/banner1.png) center / cover no-repeat;
+}
+
+.banner h2 {
+  margin-top: 130px;
+  color: var(--Bordo);
+  font-size: 40px;
+}
+
+.banner p {
+  font-size: 20px;
+  color: var(--Preto-grafite);
+}
 
 /* Promoção-banner */
 .promo-banner {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 300px;
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente */
   text-align: center;
-  line-height: 2.0;
-  background-color: var(--Cinza-claro);
+  height: 500px;
+  background-color: var(--Bege-Dourado);
 }
 
 .promo-banner h2 {
   color: var(--Light-gray);
-  font-size: 25px;
+  font-size: 40px;
 }
 
+.promo-banner p {
+  font-size: 20px;
+  color: var(--Preto-grafite);
+}
 
 /* Rodapé */
 footer {
@@ -135,8 +130,5 @@ footer {
 
 footer p {
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 20px;
 }
-
-
-
