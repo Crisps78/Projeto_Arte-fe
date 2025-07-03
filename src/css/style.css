@@ -79,25 +79,36 @@ main {
 }
 
 /* Banner Principal */
-.banner {
+
+  .banner {
+    display: flex;
+    justify-content: center;  /* Alinha horizontalmente */
+    align-items: center;      /* Alinha verticalmente */
+    height: 600px;
+    background: url(../assets/img/banner1.png) right / cover no-repeat;
+    text-align: center;
+  }
   
-  height: 600px;
-  /* line-height: 2.0; */
-  background: url(../assets/img/banner1.png) right / cover no-repeat;
-}
-
-
-.banner h2 {
-
-  color: var(--Bordo);
-  font-size: 40px;
+  .section-conteudo {
+    max-width: 30%;
+  }
   
-}
+  .banner h2 {
+    color: var(--Bordo); 
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 20px;
+    color: var(--Preto-grafite);
+    margin: 0;
+  }
+  
 
-.banner p {
-  font-size: 20px;
-  color: var(--Preto-grafite);
-}
+
+
+
 
 /* Promoção-banner */
 .promo-banner {
