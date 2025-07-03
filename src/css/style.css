@@ -90,19 +90,21 @@ main {
   }
   
   .section-conteudo {
-    max-width: 30%;
+   
+    max-width: 10%;
   }
   
   .banner h2 {
+   
     color: var(--Bordo); 
     font-size: 40px;
-    margin-bottom: 10px;
+    
   }
   
   .banner p {
     font-size: 20px;
     color: var(--Preto-grafite);
-    margin: 0;
+    
   }
   
 
