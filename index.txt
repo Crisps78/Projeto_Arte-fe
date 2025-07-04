@@ -108,19 +108,15 @@ HTML
 CSS
 
 :root {
-  --gold: #cba135;
-  --white: #ffffff;
-  --dark: #1c1c1c;
-  --bordo: #7e2a2a;
-  --light-gray: #f3f4f6;
-  --Bege-Dourado: #a1865e;
-  --Marfim-Claro: #f8f6f1;
-  /* Textos auxiliares, ícones suaves */
-  --Cinza-Areia: #b6ada4;
-  /* Tipografia em fundos claros */
-  --Preto-Profundo: #1c1c1c;
-  /* Fundo alternativo, contraste */
-  --Branco: #ffffff;
+  cores logo clara
+  #bf9b60
+  #88612e
+  #f8f6f1
+  cores logo escura
+  #bf9b60
+  #88612e
+  #f8f6f1
+
 }
 
 body {
