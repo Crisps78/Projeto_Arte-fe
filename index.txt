@@ -1,4 +1,4 @@
-HTML
+﻿HTML
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -425,3 +425,311 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+BANNNNNER
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner com Imagem Central</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="banner-container">
+        <div class="banner-content">
+            <figure class="imagens-banner">
+                <div class="slide">
+                    <img src="./cruzf.png" alt="Imagem de devoção" class="centered-image">
+                </div>
+                <div class="slide">
+                    <img src="./Deus_controle.png" alt="Deus e controle de videogame" class="centered-image">
+                </div>
+                <div class="slide">
+                    <img src="./god.png" alt="Cruz estilizada" class="centered-image">
+                </div>
+            </figure>
+            
+            <div class="banner-controls">
+                <button class="banner-btn prev-btn">&#10094;</button>
+                <button class="banner-btn next-btn">&#10095;</button>
+            </div>
+            
+            <div class="banner-dots"></div>
+        </div>
+        
+        <section class="texto-banner">
+            <h2>"Devoção, nostalgia e personalidade em uma só estampa."</h2>
+            <p>Camisetas com fé e memória afetiva</p>
+        </section>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+CSSSSSSS
+
+
+
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d691e4;
+}
+
+/* Container principal */
+.banner-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgba(126, 219, 231, 0.733);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px 0;
+}
+
+/* Contentor das imagens */
+.banner-content {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Altura fixa para o banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Container do slider */
+.imagens-banner {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+/* Slides individuais */
+.slide {
+    
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Imagem centralizada e menor */
+.centered-image {
+    max-width: 60%; /* Tamanho menor */
+    max-height: 70%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    background-color: rgba(243, 243, 241, 0.918);
+}
+
+/* Controles de navegação */
+.banner-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.banner-btn {
+    background: rgba(218, 34, 34, 0.6);
+    color: rgb(78, 221, 162);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+    transition: all 0.3s;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+/* Indicadores de posição */
+.banner-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    z-index: 5;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    background: #333;
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background: #555;
+}
+
+/* Área de texto */
+.texto-banner {
+    text-align: center;
+    padding: 25px 20px;
+    background-color: #ecc33cc5;
+}
+
+.texto-banner h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+    color: #333;
+    font-weight: 700;
+}
+
+.texto-banner p {
+    margin: 0;
+    font-size: 1.3em;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Efeito hover para imagens */
+.centered-image:hover {
+    transform: scale(1.03);
+}
+
+
+SCRIIIIIIIII
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Elementos do DOM
+    const banner = document.querySelector('.imagens-banner');
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const dotsContainer = document.querySelector('.banner-dots');
+    
+    // Variáveis de controle
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let intervalId;
+    const intervalTime = 5000; // 5 segundos
+    
+    // Função para criar os dots de navegação
+    function createDots() {
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+    }
+    
+    // Função para mover o banner
+    function moveBanner() {
+        banner.style.transform = `translateX(-${currentIndex * 100}%)`;
+        updateDots();
+    }
+    
+    // Função para atualizar os dots ativos
+    function updateDots() {
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentIndex].classList.add('active');
+    }
+    
+    // Função para ir para um slide específico
+    function goToSlide(index) {
+        currentIndex = index;
+        moveBanner();
+        resetInterval();
+    }
+    
+    // Avançar para o próximo slide
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        moveBanner();
+        resetInterval();
+    }
+    
+    // Voltar para o slide anterior
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        moveBanner();
+        resetInterval();
+    }
+    
+    // Configurar intervalo para troca automática
+    function startInterval() {
+        intervalId = setInterval(nextSlide, intervalTime);
+    }
+    
+    // Resetar intervalo quando o usuário interagir
+    function resetInterval() {
+        clearInterval(intervalId);
+        startInterval();
+    }
+    
+    // Inicialização
+    function init() {
+        createDots();
+        startInterval();
+        
+        // Event listeners
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        
+        // Pausar quando o mouse estiver sobre o banner
+        banner.addEventListener('mouseenter', () => {
+            clearInterval(intervalId);
+        });
+        
+        // Retomar quando o mouse sair do banner
+        banner.addEventListener('mouseleave', startInterval);
+        
+        // Teclado: setas esquerda/direita
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    }
+    
+    // Iniciar o banner
+    init();
+});
