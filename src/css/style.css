@@ -89,11 +89,11 @@ main {
 .imagens-banner {
   display: flex;
   justify-content: center; /* centraliza as imagens na horizontal */
-  gap: 10px; /* espaço entre as imagens */
   margin-bottom: 20px;
 }
 
 .imagens-banner img {
+ 
   width: 500px; /* ajuste conforme necessário */
 }
 .texto-banner {
