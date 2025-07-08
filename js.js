@@ -70,16 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Inicialização
     function init() {
-        // Configura o container dos slides
-        banner.style.display = 'flex';
-        banner.style.width = `${totalSlides * 100}%`;
-        
-        // Configura cada slide
-        slides.forEach(slide => {
-            slide.style.flex = '0 0 100%';
-            slide.style.width = '100%';
-        });
-        
         createDots();
         startInterval();
         
@@ -104,4 +94,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Iniciar o banner
     init();
-  });
+});
