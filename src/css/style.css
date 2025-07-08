@@ -1,3 +1,6 @@
+body {
+  background-color: var(--Ouro-sutil);
+}
 header {
   display: flex;
   justify-content: center;
@@ -85,7 +88,11 @@ nav a:hover {
   display: block;
 }
 
-
+main {
+  /* background-color: var(--Bege-Dourado); */
+  max-width: 90%;
+  margin: auto;
+}
 /* Container banner principal */
 .banner-container {
   position: relative;
@@ -274,10 +281,11 @@ nav a:hover {
   width: 100%;
   max-width: 1200px;
   margin: 30px auto;
-  background-color: var(--Cinza-Areia);
+  background-color: var(--Marfim-Claro);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  
 }
 
 .promo-banner .imagens-promo {
