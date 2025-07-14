@@ -100,7 +100,8 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  background-color: rgba(126, 219, 231, 0.733);
+  /* background-color: rgba(126, 219, 231, 0.733); */
+  background-color: var(--Marfim-Clarot);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   padding: 40px 0;
@@ -144,7 +145,7 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
-  background-color: rgba(243, 243, 241, 0.918);
+  background-color: var(--Marfim-Clarot);
 }
 
 /* Controles de navegação */
@@ -160,8 +161,8 @@ main {
 }
 
 .banner-btn {
-  background: rgba(218, 34, 34, 0.6);
-  color: rgb(78, 221, 162);
+  background: var(--Preto-grafite);
+  color: var(--Marfim-Claro);
   border: none;
   padding: 12px;
   cursor: pointer;
@@ -177,7 +178,7 @@ main {
 }
 
 .banner-btn:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--Ouro-sutil);
   transform: scale(1.1);
 }
 
@@ -197,7 +198,7 @@ main {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--Ouro-sutil);
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -208,7 +209,7 @@ main {
 }
 
 .dot:hover {
-  background: #555;
+  background: var(--Marfim-Claro);
 }
 
 /* Área de texto */
@@ -253,21 +254,21 @@ main {
 .texto-banner {
   text-align: center;
   padding: 25px 20px;
-  background: linear-gradient(to right, #ecc33c, #f5d76e);
+  background: linear-gradient( to right,var(--Preto-grafite), var(--Cinza-Areia));
   border-radius: 0 0 15px 15px;
 }
 
 .texto-banner h2 {
   margin: 0 0 10px 0;
   font-size: 1.8em;
-  color: #333;
+  color: var(--Marfim-Claro);
   font-weight: 700;
 }
 
 .texto-banner p {
   margin: 0;
   font-size: 1.3em;
-  color: #666;
+  color: var(--Marfim-Claro);
   font-weight: 300;
 }
 
