@@ -214,7 +214,7 @@ main {
 }
 
 .dot.active {
-  background: #333;
+  background: var(--Bordo);
   transform: scale(1.2);
 }
 
