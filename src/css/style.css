@@ -12,6 +12,11 @@ header {
   align-items: center;
   margin: auto;
   gap: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .logo {
@@ -31,6 +36,12 @@ header h1 {
 nav {
   background-color: var(--Bege-Dourado);
   padding: 10px 0;
+  position: fixed;
+  margin-top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+ 
 }
 
 ul {
@@ -89,9 +100,8 @@ nav a:hover {
 }
 
 main {
-  /* background-color: var(--Bege-Dourado); */
   max-width: 90%;
-  margin: auto;
+  margin: 120px auto 0;
 }
 /* Container banner principal */
 .banner-container {
