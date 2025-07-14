@@ -3,6 +3,7 @@ body {
 }
 header {
   display: flex;
+  height: 250px;
   justify-content: center;
   background-image: url(../assets/img/fundo-header.PNG);
   background-repeat: no-repeat;
@@ -21,12 +22,12 @@ header {
 
 .logo {
   width: 100%;
-  max-width: 350px;
+  max-width: 200px;
   border-radius: 130px;
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 35px;
   margin-right: 100px;
   text-align: center;
   color: var(--Marfim-Claro);
@@ -35,13 +36,11 @@ header h1 {
 
 nav {
   background-color: var(--Bege-Dourado);
-  padding: 10px 0;
   position: fixed;
   margin-top: 0px;
   left: 0;
   width: 100%;
   z-index: 10;
- 
 }
 
 ul {
@@ -54,7 +53,7 @@ ul {
 
 nav li {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1rem;
   position: relative;
 }
 
@@ -101,13 +100,14 @@ nav a:hover {
 
 main {
   max-width: 90%;
-  margin: 120px auto 0;
+  margin: 80px auto 0;
 }
 /* Container banner principal */
 .banner-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
+  height: 400px;
   margin: 0 auto;
   overflow: hidden;
   /* background-color: rgba(126, 219, 231, 0.733); */
@@ -121,30 +121,26 @@ main {
 .banner-content {
   position: relative;
   width: 100%;
-  height: 500px; /* Altura fixa para o banner */
+  height: 300px; /* Altura fixa para o banner */
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 /* Container do slider */
 .imagens-banner {
   display: flex;
   width: 900px;
-  height: 600px;
+  height: 400px;
   transition: transform 0.5s ease-in-out;
-  
 }
 
 /* Slides individuais */
 .slide {
-  
   min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 /* Imagem centralizada e menor */
@@ -161,7 +157,7 @@ main {
 /* Controles de navegação */
 .banner-controls {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -176,12 +172,12 @@ main {
   border: none;
   padding: 12px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   z-index: 10;
   transition: all 0.3s;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,7 +191,7 @@ main {
 /* Indicadores de posição */
 .banner-dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 13px;
   left: 0;
   right: 0;
   display: flex;
@@ -205,8 +201,8 @@ main {
 }
 
 .dot {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: var(--Ouro-sutil);
   cursor: pointer;
@@ -225,59 +221,24 @@ main {
 /* Área de texto */
 .texto-banner {
   text-align: center;
-  padding: 25px 20px;
-  background-color: #ecc33cc5;
-}
-
-.texto-banner h2 {
-  margin: 0 0 10px 0;
-  font-size: 1.8em;
-  color: #333;
-  font-weight: 700;
-}
-
-.texto-banner p {
-  margin: 0;
-  font-size: 1.3em;
-  color: #666;
-  font-weight: 300;
-}
-
-/* Efeito hover para imagens */
-.centered-image:hover {
-  transform: scale(1.03);
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .banner-slider {
-    height: 350px;
-  }
-  .slide img {
-    max-width: 90%;
-  }
-}
-
-
-
-/* Área de texto */
-.texto-banner {
-  text-align: center;
-  padding: 25px 20px;
-  background: linear-gradient( to right,var(--Preto-grafite), var(--Cinza-Areia));
+  padding: 10px;
+  line-height: 1.3;
+  background: linear-gradient(
+    to right,
+    var(--Preto-grafite),
+    var(--Cinza-Areia)
+  );
   border-radius: 0 0 15px 15px;
 }
 
 .texto-banner h2 {
-  margin: 0 0 10px 0;
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: var(--Marfim-Claro);
   font-weight: 700;
 }
 
 .texto-banner p {
-  margin: 0;
-  font-size: 1.3em;
+  font-size: 1em;
   color: var(--Marfim-Claro);
   font-weight: 300;
 }
@@ -290,13 +251,12 @@ main {
 /* Promoção-banner */
 .promo-banner {
   width: 100%;
-  max-width: 1200px;
-  margin: 30px auto;
+  max-width: 900px;
+  margin: 20px auto;
   background-color: var(--Marfim-Claro);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  
 }
 
 .promo-banner .imagens-promo {
@@ -329,88 +289,26 @@ main {
   width: 90%;
   max-width: 900px;
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 10px auto;
   text-align: center;
   color: var(--Light-gray);
-  font-size: 25px;
+  font-size: 1.2rem;
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .banner-conteudo2 p {
-  font-size: 20px;
+  font-size: 1rem;
   color: var(--Light-gray);
   margin: 10px 0 0;
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-  header {
-    flex-direction: column;
-    padding: 30px;
-    gap: 20px;
-  }
-  
-  header h1 {
-    margin-right: 0;
-    font-size: 36px;
-  }
-  
-  .logo {
-    max-width: 250px;
-  }
-  
-  nav li {
-    font-size: 18px;
-  }
-}
-
+/* Responsivo */
 @media (max-width: 768px) {
-  .banner-content {
-    height: 400px;
+  .banner-slider {
+    height: 350px;
   }
-  
-  .centered-image {
-    max-width: 80%;
-  }
-  
-  .texto-banner h2 {
-    font-size: 1.5em;
-  }
-  
-  .texto-banner p {
-    font-size: 1.1em;
-  }
-  
-  ul {
-    flex-wrap: wrap;
-  }
-  
-  nav li {
-    margin: 5px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 28px;
-  }
-  
-  .banner-content {
-    height: 300px;
-  }
-  
-  .banner-btn {
-    padding: 8px 12px;
-    font-size: 20px;
-  }
-  
-  .banner-conteudo2 {
-    font-size: 20px;
-    padding: 10px;
-  }
-  
-  .banner-conteudo2 p {
-    font-size: 16px;
+  .slide img {
+    max-width: 90%;
   }
 }
