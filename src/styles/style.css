@@ -1,5 +1,6 @@
 body {
-  background-color: var(--Ouro-sutil);
+  /* background-color: var(--Preto-grafite); */
+  background-color: #b1976b8f;
 }
 header {
   display: flex;
